@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    >
+
+    <PreferenceCategory android:title="@string/general_settings" >
+
+        <!--
+             Preference
+            android:key="@string/settings_user_currency"
+            android:title="@string/currency" /
+        -->
+        <com.example.expensemanager.CurrencyPreference
+            android:key="@string/settings_user_currency"
+            android:summary="INR"
+            android:title="@string/currency" />
+
+        <PreferenceScreen android:title="@string/daily_reminder" >
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="@string/settings_user_reminder_enabled"
+                android:title="@string/daily_reminder" />
+
+            <com.example.expensemanager.TimePreference
+                android:dependency="@string/settings_user_reminder_enabled"
+                android:key="@string/settings_user_reminder_when"
+                android:summary="00:00"
+                android:title="@string/time_of_day" />
+
+            <CheckBoxPreference
+                android:dependency="@string/settings_user_reminder_enabled"
+                android:key="@string/settings_user_reminder_restriction"
+                android:summary="@string/reminder_restriction_day"
+                android:title="@string/reminder_restriction_name" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="@string/settings_backup_restore"
+            android:title="@string/backup_and_restore" >
+            <Preference
+                android:key="@string/settings_backup"
+                android:title="@string/backup" />
+            <Preference
+                android:key="@string/settings_restore"
+                android:title="@string/restore" />
+        </PreferenceScreen>
+
+        <EditTextPreference
+            android:defaultValue="expensemgr"
+            
+            android:dialogMessage="Folder on sdcard, where exported CSV will be stored"
+            android:dialogTitle="CSV Export Setup"
+            android:key="@string/settings_csv_export_folder"
+            android:summary="Summary"
+            android:title="CSV Export Setup" 
+            android:digits="abcdefghijklmnopqrstuvwxyz123456789_"/>
+    </PreferenceCategory>
+
+    <!--
+    PreferenceCategory android:title="First Category">
+        <CheckBoxPreference
+                android:key="Main_Option"
+                android:title="Main Option"
+                android:defaultValue="true"
+                android:summary="SUMMARY_Main_Option" />
+
+                
+         <ListPreference
+           android:title="List Preference"
+           android:summary="This preference allows to select an item in an array"
+           android:dependency="Main_Option"
+           android:key="listPref"
+           android:defaultValue="1"
+           android:entries="@array/colors"
+           android:entryValues="@array/colors_values" />       
+                                               
+                
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Second Category">
+    
+     <PreferenceScreen android:title="Advanced Options">
+     
+        <CheckBoxPreference
+                android:key="Advanced_Option"
+                android:title="Advanced Option"
+                android:defaultValue="true"
+                android:summary="SUMMARY_Advanced_Option"/>
+                
+     </PreferenceScreen>           
+      <EditTextPreference  android:dialogTitle="EditTextTitle"
+                             android:dialogMessage="EditTextMessage"
+                             android:dependency="Main_Option"
+                             android:key="pref_dialog"
+                             android:title="SomeTitle"
+                             android:summary="Summary"
+                             android:defaultValue="test"/>      
+                             
+                              
+                                                              
+    </PreferenceCategory
+    -->
+
+</PreferenceScreen>

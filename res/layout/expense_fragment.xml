@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black" >
+
+    <TextView
+        android:id="@+id/currExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/firstPane"
+        android:layout_marginLeft="10dp"
+        android:text="$ spent till now: "
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/catExpOfDay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Category Espense of the Day"
+        android:textColor="@color/white"
+        android:visibility="gone" 
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/currExpense"/>
+
+    <LinearLayout
+        android:id="@+id/editArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/catExpOfDay"
+        android:layout_marginLeft="10dp"
+        android:background="@color/list_row_pressed_bg"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editTextExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:layout_weight=".3"
+            android:hint="today&apos;s expense"
+            android:inputType="numberDecimal"
+            android:text="0.0"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextExpNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:ems="10"
+             android:layout_weight=".3"
+            android:hint="notes"
+            android:maxLength="25"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/payInstType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:entries="@array/payInstType"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editArea"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/addExpense"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_weight="0.3"
+            android:background="@drawable/plus_selector" />
+
+        <Button
+            android:id="@+id/minusExpense"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_marginStart="30dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/minus_selector"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstPane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewExpCat"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:choiceMode="singleChoice"
+        android:clickable="true"
+        android:dividerHeight="2dp"
+        android:drawSelectorOnTop="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="@drawable/list_selector" >
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonClose"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/firstPane"
+        android:background="@drawable/calendar_button_selector"
+        android:fontFamily="@android:string/cancel"
+        android:height="15dp"
+        android:minHeight="15dp"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+</RelativeLayout>

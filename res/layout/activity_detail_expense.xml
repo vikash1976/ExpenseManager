@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+
+    <ListView
+        android:id="@+id/listExpDetails"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:listSelector="@drawable/list_selector"
+        android:clickable="true"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" 
+        >
+
+    </ListView>
+     <LinearLayout
+        android:id="@+id/pieChartArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="#000000">
+    </LinearLayout>
+
+     
+</LinearLayout>

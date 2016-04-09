@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/list_row_pressed_bg">
+    
+<LinearLayout
+    android:id="@+id/firstRowE"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="horizontal" >
+
+     <TextView
+         android:id="@+id/textView1Msg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="10dp"
+         android:layout_weight="0.2"
+         android:gravity="left"
+         android:text="Expense Details For: "
+         android:textColor="@color/white"
+         android:textSize="20dip" />
+    
+    
+    </LinearLayout>
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/firstRowE"
+    android:layout_marginLeft="20dp" 
+    android:orientation="horizontal">
+
+     <TextView
+         android:id="@+id/textView1D"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="10dp"
+         android:layout_weight="0.2"
+         android:gravity="left"
+         android:text="@string/exp_cat_title"
+         android:textColor="@color/white"
+         android:textSize="15dip" />
+    
+    <TextView
+        android:id="@+id/textView2E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="0.8"
+        android:gravity="right"
+        android:text="@string/exp_exp_title"
+        
+        android:textColor="@color/white"
+        android:textSize="15dip" />
+
+       
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="symptom_color_selected">#003366</color>
+    <color name="reaction_color_selected">#003366</color>
+    <color name="static_text_color">#003366</color>
+    <color name="journal_entry_listcolor_text_color">#003366</color>
+    <color name="note_text_disabled">#333333</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#6699FF</color>
+    <color name="sky">#0099CC</color>
+    <color name="gray">#808080</color>
+    <color name="lightgray">#e7e7e7</color>
+    <color name="lightgray02">#bfbfbf</color>
+    <color name="dark">#000015</color>
+    <color name="lightgreen">#336666</color>
+    <color name="orrange">#e33d1b</color>
+    <color name="darkorrange">#cc2303</color>
+    <color name="text_color_default">#00000C</color>
+    <color name="text_color_inverse">#FFFFFF</color>
+    <color name="list_row_default_bg">#62627B</color>
+    <color name="list_row_pressed_bg">#818195</color>
+    <color name="list_row_selected_bg">#D6D6DD</color>
+    <color name="purple">#FFAA66CC</color>
+    <color name="green">#FF99CC00</color>
+    <color name="orange">#FFFFBB33</color>
+    <color name="red">#FFFF4444</color>
+    <color name="darkblue">#FF0099CC</color>
+    <color name="darkpurple">#FF9933CC</color>
+    <color name="darkgreen">#FF669900</color>
+    <color name="darkorange">#FFFF8800</color>
+    <color name="darkred">#FFCC0000</color>
+    <color name="darksalmon">#E9967A</color>
+    <color name="violet">#EE82EE</color>
+    <color name="thistle">#D8BFD8</color>
+    <color name="orchid">#DA70D6</color>
+    <color name="goldenrod">#DAA520</color>
+    <color name="greenyellow">#ADFF2F</color>
+    <color name="paleturquoise">#AFEEEE</color>
+    <color name="lightsteelblue">#B0C4DE</color>
+    <color name="powderblue">#B0E0E6</color>
+    <color name="firebrick">#B22222</color>
+    <color name="darkgoldenrod">#B8860B</color>
+    <color name="darkcyan">#008B8B</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="springgreen">#00FF7F</color>
+    <color name="lime">#00FF00</color>
+    <color name="mediumspringgreen">#00FA9A</color>
+    <color name="darkturquoise">#00CED1</color>
+    <color name="olivedrab">#6B8E23</color>
+    <color name="slateblue">#6A5ACD</color>
+    <color name="dimgray">#696969</color>
+    <color name="mediumaquamarine">#66CDAA</color>
+    <color name="cornflowerblue">#6495ED</color>
+    <color name="midnightblue">#191970</color>
+    
+    
+
+</resources>

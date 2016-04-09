@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/lightgray">
+
+    <ListView
+        android:id="@+id/listPerfRepSum"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" 
+        android:background="@color/lightgray">
+
+    </ListView>
+
+</LinearLayout-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    >
+
+    <LinearLayout
+        android:id="@+id/listViewPart"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:background="@color/black"
+        >
+        <!-- #C2B280 -->
+    <ListView
+        android:id="@+id/listPerfRepSum"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="@drawable/list_selector"
+        android:clickable="true"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+         />
+
+  </LinearLayout>
+     
+
+
+   <!-- LinearLayout
+        android:id="@+id/barChartArea"
+        android:layout_below="@+id/listViewPart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+         
+        android:background="#000000">
+    </LinearLayout-->
+    
+
+
+</RelativeLayout>
+
+

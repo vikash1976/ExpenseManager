@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   
+    android:background="@color/list_row_pressed_bg"
+     >
+
+    <Button
+        android:id="@+id/buttonAddExpF"
+        
+        
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Add Expense"
+        
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        
+        android:background="@drawable/calendar_button_selector"
+       
+        android:height="15dp"
+        android:minHeight="15dp"
+       
+        android:textColor="@color/white"
+        android:textStyle="italic"/>
+
+</RelativeLayout>

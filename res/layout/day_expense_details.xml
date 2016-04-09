@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black" >
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Total Expense of the day: "
+        android:textColor="@color/white" />
+
+    <ListView
+        android:id="@+id/listViewDayExp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/buttonClose"
+        android:layout_marginLeft="20dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonClose"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/calendar_button_selector"
+        android:fontFamily="@android:string/cancel"
+        android:height="15dp"
+        android:minHeight="15dp"
+        android:text="X"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic" />
+
+</RelativeLayout>

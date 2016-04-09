@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <!-- #FAF0E6 -->
+
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="left|top"
+        android:height="60sp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/prevYear"
+            android:layout_width="20sp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:src="@drawable/calendar_left_arrow_year_selector" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/prevMonth"
+            android:layout_width="20sp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1sp"
+            android:layout_weight="0.1"
+            android:src="@drawable/calendar_left_arrow_month_selector" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/currentMonth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:height="40sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" >
+        </TextView>
+        <!-- @color/white -->
+
+        <ImageView
+            android:id="@+id/nextMonth"
+            android:layout_width="20sp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="1sp"
+            android:layout_weight="0.1"
+            android:src="@drawable/calendar_right_arrow_month_selector" />
+
+        <ImageView
+            android:id="@+id/nextYear"
+            android:layout_width="20sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1"
+            android:src="@drawable/calendar_right_arrow_year_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selectedDayRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonlayout"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/selectedDayMonthYear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/calendar_top_header"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calendarHeaderRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectedDayRow" 
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/calendarheader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/calendar_days" >
+
+        </ImageView>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendarHeaderRow"
+        android:numColumns="7" >
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/statusRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/budgetedFor"
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="Budgeted:  "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/totalExpense"
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="Spent: "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/fairingPoint"
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="Stats: "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" >
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/report_selector" />
+
+        <Button
+            android:id="@+id/shareOnTwitter"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/settings"
+            android:background="@drawable/shareontwitter_selector"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/payInstWise"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/shareOnTwitter"
+            android:background="@drawable/payinstwise_selector"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/exportCSVDay"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/payInstWise"
+            android:background="@drawable/dayexport_selector"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/exportCSVCat"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/exportCSVDay"
+            android:background="@drawable/catexport_selector"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/buttonToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/today_selector"
+            android:clickable="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+</RelativeLayout>

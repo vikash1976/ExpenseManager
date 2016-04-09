@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SimpleCalendar!</string>
+    <string name="app_name">Expense Logger</string>
+    <string name="action_settings">Close</string>
+    <string name="title_activity_performance_report_summary">Monthly Report</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_detail_expense">Expense Details</string>
+    <string name="pref_settings">Preferences</string>
+    <string name="general_settings">General Settings</string>
+    <string name="settings_user_currency">user.currency</string>
+    <string name="settings_csv_export_folder">user.csvexportfolder</string>
+    
+    <string name="currency">Currency</string>
+    <string name="daily_reminder">Daily reminder</string>
+    <string name="settings_user_reminder_enabled">user.reminder.enabled</string>
+    <string name="settings_user_reminder_when">user.reminder.when</string>
+    <string name="time_of_day">Time of day</string>
+    <string name="settings_user_reminder_restriction">user.reminder.remind_only_when_no_data</string>
+    <string name="reminder_restriction_day">Remind me only when I did not record an expense for the current day.</string>
+    <string name="reminder_restriction_name">Adapted reminder</string>
+    <string name="settings_backup_restore">user.backup_and_restore</string>
+    <string name="backup_and_restore">Backup/Restore your data</string>
+    <string name="backup">Backup</string>
+    <string name="settings_backup">user.backup</string>
+    <string name="settings_restore">user.restore</string>
+    <string name="restore">Restore</string>
+    <string name="settings_export">export</string>
+    <string name="export_description">Export your expenses as a .csv file</string>
+    <string name="export">Export</string>
+    <string name="setTime">Done</string>
+    <string name="day_csv_header_day">Day</string>
+    <string name="day_csv_header_category">Category</string>
+    <string name="day_csv_header_expense">Amount</string>
+    <string name="day_csv_header_notes">Notes</string>
+    <string name="cat_csv_header_category">Category</string>
+    <string name="cat_csv_header_expense">Amount</string>
+    
+    <string name="budget_reste_message">Budget already set</string>
+    <string name="selected_date_message">Selected</string>
+    <string name="budgeted">Budget</string>
+    <string name="spent">Spent</string>
+    <string name="stats">Stats</string>
+    <string name="monthly_expense_header">Expense Details For</string>
+    <string name="curr_expense_msg">Expense of the Day</string>
+    <string name="expense_literal">Expense</string>
+    <string name="budget_set_message">Setting Budget For</string>
+    <string name="cat_not_selected">Category is not chosen</string>
+    <string name="bar_x_title">Year </string>
+    <string name="bar_y_title">Amount</string>
+    <string name="bar_chart_title">Budget vs Expense Chart</string>
+    <string name="inst_transaction_chart_title">Pay Instrument Wise num of Transactions</string>
+    <string name="inst_amount_chart_title">Pay Instrument Wise sum of Amount</string>
+    <string name="perf_report_year">Year</string>
+    <string name="perf_report_month">Month</string>
+    <string name="perf_report_budget">Budget</string>
+    <string name="perf_report_expense">Expense</string>
+    <string name="perf_report_remaining">Remaining</string>
+    <string name="pie_chart_title">Category Wise Monthly Expense</string>
+    <string name="exp_cat_title">Category</string>
+    <string name="exp_exp_title">Expense</string>
+    <string name="chartView">Bar Chart View</string>
+    
+    
+    
+    
+    
+    
+    
+
+</resources>

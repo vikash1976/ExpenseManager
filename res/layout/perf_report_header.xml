@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_row_pressed_bg">
+
+<LinearLayout
+    android:id="@+id/firstRow"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="horizontal" >
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="10dp"
+         android:layout_weight="0.5"
+         android:gravity="left"
+         android:text="@string/perf_report_year"
+         android:textColor="@color/white"
+         android:textSize="20dip" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="0.5"
+        android:gravity="right"
+        android:text="@string/perf_report_month"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="20dip" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/secondRow1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/firstRow"
+    android:layout_marginLeft="20dp" 
+    android:orientation="horizontal">
+
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/textView4"
+         android:layout_weight="0.4"
+         android:gravity="left"
+         
+         android:text="@string/perf_report_budget"
+         android:textColor="@color/white"
+         android:textSize="15dip" />
+   
+     <TextView
+         android:id="@+id/textView4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="10dp"
+         android:layout_weight="0.4"
+         android:gravity="left"
+         
+         android:text="@string/perf_report_expense"
+         android:textColor="@color/white"
+         android:textSize="15dip" />
+
+     <TextView
+         android:id="@+id/textView5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginEnd="10dp"
+         android:layout_marginStart="10dp"
+         android:layout_weight="0.2"
+         android:gravity="right"
+        
+         android:text="@string/perf_report_remaining"
+         android:textColor="@color/white"
+         android:textSize="15dip" />
+    
+</LinearLayout>
+</RelativeLayout>

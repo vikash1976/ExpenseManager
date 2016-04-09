@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/currencyGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="27dp"
+            android:orientation="vertical"
+            android:textColor="@color/white" >
+
+            <RadioButton
+                android:id="@+id/USD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="USD"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/SGD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SGD"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/GBP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GBP"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/INR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INR"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/SAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAR"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/BRL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BRL"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/YEN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YEN"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/Other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51dp"
+            android:ems="10"
+            android:visibility="gone" 
+            android:textColor="@color/white"
+            android:hint="your currency"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="OK"
+            android:textColor="@color/white" 
+            android:background="@color/black"/>
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Cancel"
+            android:textColor="@color/white" 
+            android:background="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>

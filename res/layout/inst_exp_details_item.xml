@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/textViewInstDay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="TextView" 
+        android:textColor="@color/white"/>
+    
+    <TextView
+        android:id="@+id/textViewInstExp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="right"
+        android:text="TextView" 
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textViewInstNotes"
+       android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:text="TextView" 
+         android:gravity="right"
+        android:textColor="@color/white"/>
+    
+</LinearLayout>
